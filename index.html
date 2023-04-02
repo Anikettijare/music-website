@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music system website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script>
+        let menu = document.getElementById('navmenu');
+        function openMenu(){
+            navmenu.style.top= '0px';
+        }
+        function closeMenu(){
+            navmenu.style.top= '-210px';
+        }
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="head_section">
+            <nav>
+                <div class="nav_logo">
+                    <img src="images/logo.png.webp">
+                </div>
+                <ul id="navmenu" onclick="closeMenu()">
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#albums">Albums</a></li>
+                    <li><a href="#tours">Tours</a></li>
+                    <li><a href="#pages">Pages</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="buybtn">
+                    <a href="#">Buy Tickets</a>
+                </div>
+                <div class="menu_bar" onclick="openMenu()">
+                    <i class="fa fa-bars"></i>
+                </div>
+            </nav>
+            <header>
+                <h2>The electro vibe</h2>
+                <h1>Tailor lachiri</h1>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique, adipisci accusantium natus
+                    aliquid quia delectus dolor animi recusandae aliquam, autem laborum.
+                </p>
+                <a href="#">Buy Tickets</a>
+            </header>
+        </div>
+        <!-- About us part -->
+        <section class="about_portion">
+            <div class="about_section" id="about">
+                <div class="about_image">
+                    <img src="images/about.png.webp" alt="">
+                </div>
+                <div class="about_head">
+                    <h2>About us</h2>
+                    <h1>The Electro Vibe</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor inc-ididunt ut
+                        labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra
+                        maecenas accumsan lacus vel facilisis. lectus turpis sociis ut porttitor scelerisque amet
+                        ultrices placerat mid facilisis proin purus, cursus ridiculus nisi diam augue porta? Penatibus
+                        magna etiam, placerat dignissim.</p>
+                    <a href="#">Contact us</a>
+                </div>
+            </div>
+            <!-- Newest albums and singles -->
+            <section class="dicography_portion">
+                <div class="dicography_container" id="albums">
+                    <div class="dico_content">
+                        <div class="dico_head">
+                            <h2>Our Discogaphy</h2>
+                            <h1>Newest albums & Singles</h1>
+                        </div>
+                        <div class="dico_btn">
+                            <a href="#">Buy on itunes</a>
+                        </div>
+                    </div>
+                    <div class="our_artist">
+                        <div class="artists">
+                            <img src="images/1.jpg.webp">
+                            <div class="artist_info">
+                                <h3>I’m a mess</h3>
+                                <p> Bebe Rexha</p>
+                            </div>
+                        </div>
+                        <div class="artists">
+                            <img src="images/2.jpg.webp">
+                            <div class="artist_info">
+                                <h3>Natural</h3>
+                                <p>Imagine Dragons</p>
+                            </div>
+                        </div>
+                        <div class="artists">
+                            <img src="images/3.jpg.webp">
+                            <div class="artist_info">
+                                <h3>Sweet But Psycho</h3>
+                                <p>Ava Max</p>
+                            </div>
+                        </div>
+                        <div class="artists">
+                            <img src="images/4.jpg.webp">
+                            <div class="artist_info">
+                                <h3>Waiting For Love</h3>
+                                <p> Avicii</p>
+                            </div>
+                        </div>
+                        <div class="artists">
+                            <img src="images/5.jpg.webp">
+                            <div class="artist_info">
+                                <h3>So Am I</h3>
+                                <p> Ava Max</p>
+                            </div>
+                        </div>
+                        <div class="artists">
+                            <img src="images/6.jpg.webp">
+                            <div class="artist_info">
+                                <h3>Mamma Mia</h3>
+                                <p>Hugel feat. Amber</p>
+                            </div>
+                        </div>
+                        <div class="artists">
+                            <img src="images/7.jpg.webp">
+                            <div class="artist_info">
+                                <h3>Bad Guy</h3>
+                                <p>Billie Eilish</p>
+                            </div>
+                        </div>
+                        <div class="artists">
+                            <img src="images/8.jpg.webp">
+                            <div class="artist_info">
+                                <h3>Let me down slowly</h3>
+                                <p>Alec Benjamin</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <!-- Audio section -->
+        <section>
+            <div class="latest_albums">
+                <div class="alb_images">
+                
+                </div>
+                <div class="alb_music">
+                    <div class="head_part">
+                        <h2>Latest Albums</h2>
+                        <h1>When We All Fall Asleep</h1>
+                    </div>
+                    <ul class="alb_list">
+                        <li>
+                            <div class="play_btn">
+                                <i class="fa fa-play"></i>
+                            </div>
+                            <div class="alb_name">
+                                <h4>I'm a mess</h4>
+                                <h6>Bebe Rexha</h6>
+                            </div>
+                            <div class="music_icon first">
+                                <span><i class="fa fa-amazon"></i></span>
+                                <span><i class="fa fa-spotify"></i></span>
+                                <span><i class="fa fa-apple"></i></span>
+                                <span><i class="fa fa-soundcloud"></i></span>
+                            </div>
+                            <div class="alb_time">
+                                <span>3.16</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="play_btn">
+                                <i class="fa fa-play"></i>
+                            </div>
+                            <div class="alb_name">
+                                <h4>Sweet But Psycho</h4>
+                                <h6>Ava Max</h6>
+                            </div>
+                            <div class="music_icon">
+                                <span><i class="fa fa-amazon"></i></span>
+                                <span><i class="fa fa-spotify"></i></span>
+                                <span><i class="fa fa-apple"></i></span>
+                                <span><i class="fa fa-soundcloud"></i></span>
+                            </div>
+                            <div class="alb_time">
+                                <span>3.16</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="play_btn">
+                                <i class="fa fa-play"></i>
+                            </div>
+                            <div class="alb_name">
+                                <h4>Waiting For Love</h4>
+                                <h6>Avicii</h6>
+                            </div>
+                            <div class="music_icon">
+                                <span><i class="fa fa-amazon"></i></span>
+                                <span><i class="fa fa-spotify"></i></span>
+                                <span><i class="fa fa-apple"></i></span>
+                                <span><i class="fa fa-soundcloud"></i></span>
+                            </div>
+                            <div class="alb_time">
+                                <span>3.16</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="play_btn">
+                                <i class="fa fa-play"></i>
+                            </div>
+                            <div class="alb_name">
+                                <h4>Mamma Mia</h4>
+                                <h6>Hugel feat.Amber</h6>
+                            </div>
+                            <div class="music_icon">
+                                <span><i class="fa fa-amazon"></i></span>
+                                <span><i class="fa fa-spotify"></i></span>
+                                <span><i class="fa fa-apple"></i></span>
+                                <span><i class="fa fa-soundcloud"></i></span>
+                            </div>
+                            <div class="alb_time">
+                                <span>3.16</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="play_btn">
+                                <i class="fa fa-play"></i>
+                            </div>
+                            <div class="alb_name">
+                                <h4>Let Me Down Slowly</h4>
+                                <h6>Alec Benjamin</h6>
+                            </div>
+                            <div class="music_icon">
+                                <span><i class="fa fa-amazon"></i></span>
+                                <span><i class="fa fa-spotify"></i></span>
+                                <span><i class="fa fa-apple"></i></span>
+                                <span><i class="fa fa-soundcloud"></i></span>
+                            </div>
+                            <div class="alb_time">
+                                <span>3.16</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="play_btn">
+                                <i class="fa fa-play"></i>
+                            </div>
+                            <div class="alb_name">
+                                <h4>Everything I Need</h4>
+                                <h6>Skylar Grey</h6>
+                            </div>
+                            <div class="music_icon">
+                                <span><i class="fa fa-amazon"></i></span>
+                                <span><i class="fa fa-spotify"></i></span>
+                                <span><i class="fa fa-apple"></i></span>
+                                <span><i class="fa fa-soundcloud"></i></span>
+                            </div>
+                            <div class="alb_time">
+                                <span>3.16</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="play_btn">
+                                <i class="fa fa-play"></i>
+                            </div>
+                            <div class="alb_name">
+                                <h4>On My Way</h4>
+                                <h6>Alan Walkar,Sabrina carpenter,Farruko</h6>
+                            </div>
+                            <div class="music_icon">
+                                <span><i class="fa fa-amazon"></i></span>
+                                <span><i class="fa fa-spotify"></i></span>
+                                <span><i class="fa fa-apple"></i></span>
+                                <span><i class="fa fa-soundcloud"></i></span>
+                            </div>
+                            <div class="alb_time">
+                                <span>3.16</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- Video Section -->
+        <section class="videos">
+            <div class="video_section">
+                <div class="video_head">
+                    <h2>Our Videos</h2>
+                    <h1>Newest albums & Singles</h1>
+                </div>
+            </div>
+            <div class="video_part">
+                <div class="video_clip">
+                    <img src="images/vid_img.webp">
+                    <i class="fa fa-play"></i>
+                </div>
+                <div class="vid_playlist">
+                    <ul>
+                        <li>
+                            <div class="play_list">
+                                <img src="images/2.jpg" alt="">
+                                <div class="list_item">
+                                    <span>Maroon 5 - Don't Wanna Know (Audio)</span>
+                                    <p><i class="fa fa-play"></i>2.34</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="play_list">
+                                <img src="images/1.jpg" alt="">
+                                <div class="list_item">
+                                    <span>Maroon 5 - Don't Wanna Know (Audio)</span>
+                                    <p><i class="fa fa-play"></i>2.34</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="play_list">
+                                <img src="images/3.jpg (1).webp" alt="">
+                                <div class="list_item">
+                                    <span>Maroon 5 - Don't Wanna Know (Audio)</span>
+                                    <p><i class="fa fa-play"></i>2.34</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="play_list">
+                                <img src="images/4.jpg (1).webp" alt="">
+                                <div class="list_item">
+                                    <span>Maroon 5 - Don't Wanna Know (Audio)</span>
+                                    <p><i class="fa fa-play"></i>2.34</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="play_list">
+                                <img src="images/5.jpg (1).webp" alt="">
+                                <div class="list_item">
+                                    <span>Maroon 5 - Don't Wanna Know (Audio)</span>
+                                    <p><i class="fa fa-play"></i>2.34</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- Section for upcoming show -->
+        <section class="show_section">
+            <div class="upcoming_events">
+                <div class="event_head">
+                    <div class="event_tag">
+                        <h2>Upcoming Shows</h2>
+                        <h1>When we All Fall Asleep</h1>
+                    </div>
+                    <div class="eventmore_info">
+                        <a href="#">View All</a>
+                    </div>
+                </div>
+            </div>
+            <div class="shows_list">
+                <div class="show_item">
+                    <div class="show_date">
+                        <h2>25</h2>
+                        <p>sep</p>
+                    </div>
+                    <div class="show_title">
+                        <h2>Sunburn Arena with Wiz Khalifa</h2>
+                        <p>EDM, Pop, Rap | English | Age 15+ | 5hrs</p>
+                    </div>
+                    <div class="show_location">
+                        <p> <i class="fa fa-map-marker"></i> Multiple Venues</p>
+                    </div>
+                    <div class="show_time">
+                        <p> <i class="fa fa-clock-o"></i> 2.00 PM</p>
+                    </div>
+                    <div class="show_btn">
+                        <a href="#">Buy Button</a>
+                    </div>
+                </div>
+                <div class="show_item">
+                    <div class="show_date">
+                        <h2>5</h2>
+                        <p>sep</p>
+                    </div>
+                    <div class="show_title">
+                        <h2>Raymond MTV India Music</h2>
+                        <p>Rock, Sufi | English, Hindi | Age 12+</p>
+                    </div>
+                    <div class="show_location">
+                        <p> <i class="fa fa-map-marker"></i> The Fairmont Hotel: Jaipur</p>
+                    </div>
+                    <div class="show_time">
+                        <p> <i class="fa fa-clock-o"></i> 2.00 PM</p>
+                    </div>
+                    <div class="show_btn">
+                        <a href="#">Buy Button</a>
+                    </div>
+                </div>
+                <div class="show_item">
+                    <div class="show_date">
+                        <h2>16</h2>
+                        <p>sep</p>
+                    </div>
+                    <div class="show_title">
+                        <h2>Sunburn Goa 2019</h2>
+                        <p>EDM | English | Age 15+ | 8hrs</p>
+                    </div>
+                    <div class="show_location">
+                        <p> <i class="fa fa-map-marker"></i>  Vagator: Goa</p>
+                    </div>
+                    <div class="show_time">
+                        <p> <i class="fa fa-clock-o"></i> 2.00 PM</p>
+                    </div>
+                    <div class="show_btn">
+                        <a href="#">Buy Button</a>
+                    </div>
+                </div>
+                <div class="show_item">
+                    <div class="show_date">
+                        <h2>20</h2>
+                        <p>sep</p>
+                    </div>
+                    <div class="show_title">
+                        <h2>The Piano Man presents Shockblast</h2>
+                        <p>Jazz, Pop | English | 3hrs</p>
+                    </div>
+                    <div class="show_location">
+                        <p> <i class="fa fa-map-marker"></i>The Piano Man Jazz Club: Delhi</p>
+                    </div>
+                    <div class="show_time">
+                        <p> <i class="fa fa-clock-o"></i> 8.00 PM</p>
+                    </div>
+                    <div class="show_btn">
+                        <a href="#">Buy Button</a>
+                    </div>
+                </div>
+                <div class="show_item">
+                    <div class="show_date">
+                        <h2>14</h2>
+                        <p>oct</p>
+                    </div>
+                    <div class="show_title">
+                        <h2>Zangoora - Kingdom of Dreams</h2>
+                        <p>EDM, Pop, Rap | English | Age 15+ | 5hrs</p>
+                    </div>
+                    <div class="show_location">
+                        <p> <i class="fa fa-map-marker"></i>Kingdom Of Dreams: Gurgaon</p>
+                    </div>
+                    <div class="show_time">
+                        <p> <i class="fa fa-clock-o"></i> 9.00 PM</p>
+                    </div>
+                    <div class="show_btn">
+                        <a href="#">Buy Button</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Footer section of the website -->
+        <footer id="contact">
+            <div class="footer_section">
+                <div class="footer_head">
+                    <div class="contact_info">
+                        <div class="contact_head">
+                            <h2>Contact us</h2>
+                            <h1>Got A Quetion?</h1>
+                        </div>
+                        <form action="post">
+                            <div class="input_field">
+                                <input type="text" name="Name" placeholder="Name">
+                            </div>
+                            <div class="input_field">
+                                <input type="email" name="Email" placeholder="Email">
+                            </div>
+                            <div class="text_field">
+                                <textarea name="message" placeholder="Message"></textarea>
+                                <button>Send Email</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="footer_image">
+                        <img src="images/footer-img.jpg.webp" width="100%">
+                    </div>
+                </div>
+            </div>
+            <div class="footer_middle">
+                <div class="location_box">
+                    <span> <i class="fa fa-map-marker"></i></span>
+                    <p> 
+                        333 Middle Winchendon Rd,<br>
+                        Rindge, NH 03461
+                    </p>
+                </div>
+                <div class="location_box">
+                    <span><i class="fa fa-map-marker"></i></span>
+                    <p> 
+                        125-711-811 | 125-668-886<br>
+                        Support.music@gmail.com
+                    </p>
+                </div>
+                <div class="social_platform">
+                    <i class="fa fa-facebook"></i>
+                    <i class="fa fa-twitter"></i>
+                    <i class="fa fa-youtube-play"></i>
+                    <i class="fa fa-instagram"></i>
+                </div>
+            </div>
+            <div class="copyright_section">
+                <p>Copyright © 
+                    <script>
+                        document.write(new Date().getFullYear());
+                    </script>
+                    2023 All rights reserved | This template is made with 
+                    <i class="fa fa-heart"></i>
+                    by colorib.
+                </p>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

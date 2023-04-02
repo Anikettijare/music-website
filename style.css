@@ -1,0 +1,731 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.head_section {
+    height: 1000px;
+    background-image: url('images/hero-bg.png.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 25px;
+    align-items: center;
+}
+
+ul li {
+    display: inline;
+    margin: 0 18px;
+}
+
+ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+ul li .active {
+    border: 2px solid;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(50deg, #503aca 0%, #ea34ff 100%);
+    padding: 10px 15px;
+}
+
+.menu_bar i {
+    color: #fff;
+    font-size: 30px;
+}
+
+.menu_bar {
+    display: none;
+}
+
+header {
+    width: 750px;
+    color: #fff;
+    padding: 170px 50px 150px 100px;
+}
+
+header h2 {
+    font-size: 34px;
+    font-style: italic;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.buybtn {
+    line-height: 70px;
+}
+
+.buybtn a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px;
+    background: linear-gradient(45deg, #503aca 0%, #ea34ff 100%);
+}
+
+header h1 {
+    font-size: 70px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+header p {
+    margin-bottom: 30px;
+    font-size: 15px;
+}
+
+header a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 10px 20px;
+    background: linear-gradient(45deg, #503aca 0%, #ea34ff 100%);
+}
+
+/* CSS applied to sections About part */
+.about_portion {
+    background-color: #0c0617;
+    position: relative;
+    z-index: -2;
+    margin-top: -200px;
+}
+
+.about_section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+
+.about_section::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 70%;
+    left: 0;
+    top: -372px;
+    background-color: #0c0617;
+    z-index: -1;
+}
+
+.about_image {
+    position: relative;
+    z-index: 4;
+}
+
+.about_head {
+    width: 600px;
+}
+
+.about_head h2 {
+    font-style: italic;
+    color: #e934ff;
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+
+.about_head h1 {
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 40px;
+}
+
+.about_head p {
+    color: #fff;
+    margin: 15px 0 40px;
+}
+
+.about_head a {
+    background: linear-gradient(45deg, #503aca 0%, #ea34ff 100%);
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+/* CSS applied to dicograpy part */
+.dicography_portion {
+    background-image: url('images/discography-bg.png.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    position: relative;
+    z-index: -1;
+}
+
+.dicography_container {
+    position: relative;
+    padding-top: 400px;
+    margin-top: -350px;
+    padding-bottom: 80px;
+}
+
+.dicography_portion::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 1505px;
+    left: 0;
+    top: -1004px;
+    background-image: url(images/about-overlay.png.webp);
+    background-repeat: no-repeat;
+    background-position: center top;
+    z-index: 5;
+}
+
+.dico_content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 80px 40px;
+}
+
+.dico_head h2 {
+    color: #e934ff;
+    font-style: italic;
+    font-size: 30px;
+    margin-bottom: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+        'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.dico_head h1 {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 40px;
+}
+
+.dico_btn a {
+    text-decoration: none;
+    background: linear-gradient(45deg, #503aca 0%, #ea34ff 100%);
+    padding: 10px 20px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.our_artist {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.artists img {
+    border-radius: 50%;
+}
+
+.artist_info {
+    text-align: center;
+    color: #fff;
+    margin: 15px;
+}
+
+.artist_info h3 {
+    font-size: 25px;
+    margin-bottom: 10px;
+    letter-spacing: 1.5px;
+}
+
+/* CSS applied to latest album section */
+.latest_albums {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.alb_images {
+    width: 50%;
+    background-image: url('images/2.jpg\ \(1\).webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.alb_music {
+    width: 50%;
+    background-color: #0F0923;
+    color: #fff;
+    padding-bottom: 60px;
+}
+
+.head_part {
+    margin: 50px;
+}
+
+.head_part h2 {
+    color: #e934ff;
+    font-style: italic;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+        'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.head_part h1 {
+    text-transform: uppercase;
+    font-size: 40px;
+    line-height: 60px;
+}
+
+.alb_list li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 50px;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+    border-bottom: 1px solid #262037;
+}
+
+.play_btn {
+    position: absolute;
+    left: 1px;
+}
+
+.play_btn i {
+    border: 2px solid white;
+    border-radius: 50%;
+    padding: 8px;
+    background: #4b0d8f;
+}
+
+.alb_name {
+    margin-left: 35px;
+}
+
+.alb_name h6 {
+    font-size: 13px;
+    letter-spacing: 1px;
+    color: gray;
+}
+
+.music_icon {
+    display: none;
+    position: absolute;
+    right: 125px;
+}
+
+.alb_list li:hover .music_icon {
+    display: block;
+}
+
+.alb_list li:hover {
+    background-color: #262037;
+}
+
+.alb_list span {
+    margin: 0 5px;
+}
+
+/* CSS applied to video section  */
+.videos {
+    background-color: #0c0617;
+    background-image: url('images/video-overlay.png.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 100px;
+}
+
+.video_head {
+    text-align: center;
+    padding: 50px;
+}
+
+.video_head h2 {
+    color: #ea34ff;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+        'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: italic;
+}
+
+.video_head h1 {
+    font-size: 35px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.video_part {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+.video_clip {
+    width: 60%;
+    position: relative;
+}
+
+.video_clip i {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 42%;
+    right: 46%;
+    font-size: 20px;
+    background: blueviolet;
+    padding: 20px;
+    border-radius: 50%;
+    text-align: center;
+    color: #fff;
+}
+
+.video_clip img {
+    width: 100%;
+}
+
+.vid_playlist {
+    overflow: auto;
+    width: 30%;
+    height: 456px;
+    background-color: #0F0923;
+    color: #fff;
+}
+
+.vid_playlist::-webkit-scrollbar {
+    display: none;
+}
+
+.play_list {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    gap: 25px;
+}
+
+/* CSS applied to Shows Section */
+.show_section {
+    background-color: #0c0617;
+    padding: 50px;
+}
+
+.upcoming_events {
+    padding-bottom: 50px;
+}
+
+.event_head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.event_tag h2 {
+    font-size: 30px;
+    color: #e934ff;
+    font-style: italic;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+        'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding-bottom: 10px;
+}
+
+.event_tag h1 {
+    font-size: 35px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.eventmore_info a {
+    text-decoration: none;
+    background: linear-gradient(45deg, #503aca 0%, #ea34ff 100%);
+    padding: 10px 20px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.show_item {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    gap: 40px;
+    padding: 30px 0;
+    border-bottom: 1px solid rgba(235, 235, 235, 0.1);
+}
+
+.show_item p {
+    color: #c4c4c4;
+}
+
+.show_date {
+    width: 5%;
+    text-align: center;
+}
+
+.show_date h2 {
+    color: #e934ff;
+    font-size: 35px;
+}
+
+.show_date p {
+    text-transform: uppercase;
+}
+
+.show_title {
+    width: 37%;
+}
+
+.show_title h2 {
+    font-size: 23px;
+    padding-bottom: 10px;
+}
+
+.show_location {
+    width: 20%;
+}
+
+.show_location p {
+    font-size: 15px;
+}
+
+.show_time {
+    width: 12%;
+}
+
+.show_item i {
+    color: #e934ff;
+    margin-right: 5px;
+}
+
+.show_btn a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    border: 2px solid;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(45deg, #503aca 0%, #ea34ff 100%);
+    padding: 15px;
+}
+
+.show_btn a:hover {
+    background: linear-gradient(45deg, #503aca 0%, #ea34ff 100%);
+}
+
+.show_item:hover {
+    background-color: rgba(235, 235, 235, 0.1);
+    transition: 0.5s ease-in-out;
+}
+
+/* CSS applied to footer section */
+footer {
+    position: relative;
+    background-color: #0c0617;
+    background-image: url('images/footer-bg.png.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.footer_head {
+    background: #191039;
+    margin: 0px 80px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.contact_head {
+    padding: 30px;
+}
+
+.contact_head h2 {
+    font-style: italic;
+    color: #e934ff;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+        'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding-bottom: 15px;
+}
+
+.contact_head h1 {
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.contact_info form {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.input_field {
+    width: 100%;
+    max-width: 50%;
+    padding: 30px 20px;
+}
+
+.contact_info form input {
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-bottom: 1px solid rgba(235, 235, 235, 0.1);
+    background-color: transparent;
+}
+
+.text_field {
+    width: 100%;
+    padding: 30px 20px;
+}
+
+.contact_info textarea {
+    width: 100%;
+    height: 70px;
+    border: none;
+    border-bottom: 1px solid rgba(235, 235, 235, 0.1);
+    background-color: transparent;
+}
+
+.contact_info button {
+    padding: 10px 20px;
+    background: linear-gradient(45deg, #503aca 0%, #ea34ff 100%);
+    text-transform: uppercase;
+    color: #fff;
+    margin-top: 50px;
+    cursor: pointer;
+}
+
+.footer_middle {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    color: #fff;
+    padding: 30px 0;
+    gap: 20px;
+}
+
+.location_box {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.location_box span {
+    background: linear-gradient(45deg, #503aca 0%, #ea34ff 100%);
+    border-radius: 50%;
+    padding: 20px;
+}
+
+.social_platform {
+    border: 2px solid;
+    border-image-slice: 1;
+    border-color: #e934ff;
+    padding: 20px;
+    border-radius: 50px;
+}
+
+.social_platform i {
+    margin: 5px 15px;
+    cursor: pointer;
+}
+
+.copyright_section {
+    color: #c4c4c4;
+    border-top: 1px solid #928f8f;
+    text-align: center;
+    padding: 30px;
+    margin: 0 30px;
+    font-size: 12px;
+}
+
+.copyright_section i {
+    color: #e934ff;
+}
+
+/* Media Quries for ipads */
+@media (max-width:900px) {
+    .head_section ul {
+        width: 100vw;
+        position: fixed;
+        top: -210px;
+        text-align: center;
+        left: 0px;
+        background: blueviolet;
+        display: block;
+        transition: 0.5s;
+    }
+    .head_section ul li{
+        text-decoration: none;
+        display: block;
+        margin: 10px;
+    }
+    .buybtn {
+        display: none;
+    }
+
+    .menu_bar {
+        display: block;
+    }
+
+    .dico_btn {
+        margin-top: 35px;
+    }
+
+    .alb_images,
+    .alb_music {
+        width: 100%;
+        height: 1000px;
+    }
+
+    .video_clip,
+    .vid_playlist {
+        width: 86%;
+    }
+
+    .show_section {
+        padding: 20px;
+    }
+
+    .show_item {
+        gap: 20px;
+        font-size: 11px;
+    }
+
+    .footer_image {
+        display: none;
+    }
+}
+
+@media (max-width:500px) {
+    header {
+        width: 370px;
+        color: #fff;
+        padding: 100px 0px 150px 20px;
+    }
+
+    .about_image img {
+        width: 100%;
+    }
+
+    .about_head {
+        padding: 20px;
+    }
+
+    .show_item {
+        display: block;
+        text-align: center;
+        padding: 30px;
+    }
+
+    .show_date,
+    .show_location,
+    .show_title,
+    .show_time {
+        width: 100%;
+    }
+
+    .show_item p {
+        margin-bottom: 30px;
+    }
+
+    .footer_head {
+        margin: 0px 20px;
+    }
+
+}
