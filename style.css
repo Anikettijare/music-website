@@ -16,8 +16,14 @@ body {
 nav {
     display: flex;
     justify-content: space-between;
-    margin: 0 25px;
+    padding: 0 25px;
     align-items: center;
+    position: fixed;
+    top: 0px;
+    z-index: 3;
+    left: 0;
+    right: 0;
+    background-color: #040308;
 }
 ul li {
     display: inline;
